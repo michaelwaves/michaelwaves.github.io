@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singularity Strategies - AI Consulting for SMBs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 2rem 0 1rem 0;
+            color: #000;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .services {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .services li {
+            padding: 0.3rem 0;
+            font-size: 1.1rem;
+        }
+
+        .smbs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0 2rem 0;
+        }
+
+        .smb {
+            background: #f8f8f8;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Carousel styles */
+        .carousel {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            border-radius: 6px;
+            padding: 1rem 0;
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 2rem;
+            animation: scroll 20s linear infinite;
+        }
+
+        .logo {
+            font-weight: 500;
+            color: #555;
+            font-size: 1rem;
+            flex: 0 0 auto;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .credentials {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .smbs {
+                gap: 0.5rem;
+            }
+
+            .logo {
+                min-width: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Singularity Strategies</h1>
+    <p class="tagline">All-in-one AI consulting for small and medium businesses</p>
+
+    <p><b>Save time, save money, and transform your business with AI.</b> We leverage the latest models, tools, and AI
+        research to deliver practical solutions.</p>
+
+    <h2>Target Industries</h2>
+    <div class="smbs">
+        <div class="smb">Restaurants</div>
+        <div class="smb">Retail Stores</div>
+        <div class="smb">Medical Practices</div>
+        <div class="smb">Law Firms</div>
+        <div class="smb">Accounting Firms</div>
+        <div class="smb">Real Estate</div>
+        <div class="smb">Manufacturing</div>
+        <div class="smb">Construction</div>
+        <div class="smb">Marketing Agencies</div>
+        <div class="smb">E-commerce</div>
+        <div class="smb">SaaS Startups</div>
+        <div class="smb">Consulting</div>
+    </div>
+
+    <h2>Services</h2>
+    <ul class="services">
+        <li>• Evals</li>
+        <li>• RL Environments</li>
+        <li>• Finetuning</li>
+        <li>• Model Hosting</li>
+        <li>• Solutions Architecture</li>
+        <li>• No-Code Building</li>
+    </ul>
+
+    <h2>Powered by Leading AI Platforms</h2>
+    <div class="carousel">
+        <div class="carousel-track" id="carousel-track">
+            <div class="logo">Anthropic</div>
+            <div class="logo">OpenAI</div>
+            <div class="logo">OpenRouter</div>
+            <div class="logo">Google AI</div>
+            <div class="logo">Hugging Face</div>
+
+            <!-- duplicate for seamless loop -->
+            <div class="logo">Anthropic</div>
+            <div class="logo">OpenAI</div>
+            <div class="logo">OpenRouter</div>
+            <div class="logo">Google AI</div>
+            <div class="logo">Hugging Face</div>
+        </div>
+    </div>
+
+    <div class="credentials">
+        <h2>Experience</h2>
+        <p>Our team has worked at X, Microsoft, Vector Institute, and Bank of Montreal.</p>
+    </div>
+
+    <div class="credentials">
+        Contact us at <a href="mailto:founders@singularitystrategies.com">founders@singularitystrategies.com</a>
+    </div>
+
+    <script>
+        // Optional: pause on hover
+        const track = document.getElementById('carousel-track');
+        track.addEventListener('mouseenter', () => {
+            track.style.animationPlayState = 'paused';
+        });
+        track.addEventListener('mouseleave', () => {
+            track.style.animationPlayState = 'running';
+        });
+    </script>
+</body>
+
+</html>
